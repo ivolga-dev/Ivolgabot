@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "NODE_ENV=development node --watch src/index.js",
-    "check": "node --check src/index.js"
+    "check": "node --check src/index.js",
+    "unpack": "bash scripts/unpack.sh"
   },
   "dependencies": {
     "better-sqlite3": "^11.8.1",

@@ -17,5 +17,7 @@ export const config = {
   globalAdminIds: (process.env.GLOBAL_ADMIN_USER_IDS ?? '')
     .split(',')
     .map((item) => Number(item.trim()))
-    .filter(Boolean)
+    .filter(Boolean),
+  adminPanelLogin: process.env.ADMIN_PANEL_LOGIN ?? 'admin',
+  adminPanelPassword: must(process.env.ADMIN_PANEL_PASSWORD, 'ADMIN_PANEL_PASSWORD')
 };
